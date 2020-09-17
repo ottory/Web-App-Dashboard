@@ -9,6 +9,8 @@
     box-sizing: border-box;
  } 
 
+ 
+
 /* *********** Base Layout Styles ********* */
 body {
   margin: 0px;
@@ -22,14 +24,13 @@ body {
 .grid-container {
   height: 100vh;
   display: grid;
-  grid-template-columns: .2fr 2fr;
-  grid-template-rows: 80px minmax(200px, 1fr) 100px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   grid-gap: 0px;
   grid-template-areas: 
-    "nav-header nav-header nav-header"
-    "nav main main"
-    "nav main main"
-    "nav main main";
+    "nav-header"
+    "nav"
+    "main";
 }
 
 h1 {
@@ -40,7 +41,10 @@ a {
   text-decoration: none;
   color: whitesmoke; 
 }
+li{
+list-style: none;
 
+}
 a:hover {
   color: #e6ddca;
 }
@@ -64,7 +68,6 @@ main {
 /* **** Nav header top of page ***** */
 .nav-header {
   display: grid;
-  /* grid-area: nav-header; */
   grid-auto-flow: column;
   grid-gap: 20px;
   min-height: 80px;
@@ -94,19 +97,17 @@ main {
 .bell {
   width: 20px;
 }
+
+/* ****** Side Navagation with SVGs ******* */
 nav {
-  /* display: grid;
-  height: 100%;
-   */
-
-
- 
+  
   background-color:  rgb(102, 102, 223);
-  /* padding-left: 5px; */
+  padding-left: 15px;
   padding-right: 15px;
-  width: 100%;
 }
-
+nav img {
+  
+}
 
 
 
@@ -118,9 +119,10 @@ nav {
   
 }
 
-
-
-.main-header-search {
-  display: wrap;
-  text-align: right;
+.headline {
+  display: grid;
+ 
+}
+.daily-traffic {
+  display: grid;
 }

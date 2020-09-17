@@ -24,7 +24,8 @@
                               <a href="">Andrew Ryan</a>
                           </div>
                 </header>
-          
+
+                <!-- Side Nav Bar -->
       
         <nav>
            <a href="default"><img src="icons/icon-dashboard.svg" alt="Dashboard"></a>
@@ -33,29 +34,68 @@
            <a href="default"><img src="icons/icon-settings.svg" alt="settings"></a>
         </nav>
     
-          
+                <!-- Main - header -->
   
         <main class="main">
-            <!-- <div class="one">One</div> -->
-            <div class="main-header"​>
+          <div class="main-header"​>
               <h2 class="headline">Dashboard</h2>
-            <div class="main-header-search">
-                <input type="search" placeholder="Search..">
-            </div>
-            </div>    <!--dash top -->
+                  <div class="main-header-search">
+                      <input type="search" placeholder="Search..">
+                  </div>
+            </div>    
 
-            <!--***** alert **** -->
+                <!-- alert banner  -->
 
             <div class="alert" id="alert">
-              <!-- *** insert javascript here ****** -->
+              <!-- insert javascript here -->
           </div>  
 
+<!-- **************************************************************************** -->
 
-             <!--***  Traffic ****** -->
-             <div class="traffic">
+<!-- Line Graph Charts -->
+
+        <section class="traffic">
+          <div class="traffic-header"> 
+               <h3>Traffic</h3>
+               <ul class="traffic-nav">
+                  <li class="traffic-nav-link">Hourly</li>
+                  <li class="traffic-nav-link">Daily</li>
+                  <li class="traffic-nav-link">Weekly</li>
+                  <li class="traffic-nav-link">Monthly</li>
+                </ul>
             </div>
-          
+            <div class="widget-container-full">
+              <!-- element line graph will attach to -->
+              <canvas id="traffic-chart"></canvas>
+            </div>
 
+        </section>
+
+<!-- Bar graph  -->
+
+        <section class="daily">
+          <div class="daily-header">
+          <h2>Daily Traffic</h2>
+        </div>
+          <div class="widget-container-half">
+            <!-- element line graph will attach to -->
+            <canvas id="daily-chart"></canvas>
+          </div>
+        </section>
+
+<!-- Donut chart  -->
+
+        <section class="mobile-users">
+          <div class="mobile-header">
+            <h2>Mobile Users</h2>
+          </div>
+            <div class="widget-container-half">
+              <!-- element line graph will attach to  -->
+              <canvas id="mobile-chart"></canvas>
+            </div>
+        </section>
+
+        
          
       </main>
 </div>
