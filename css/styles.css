@@ -93,6 +93,10 @@ nav a {
   width: 50%;
   margin: 20px 20px;
 }
+
+h3 {
+  font-weight: lighter;
+}
 /* main area  ************************/
 main {
   margin-top: 0px;
@@ -192,9 +196,57 @@ p {
 /* *********************************************** */
 /* ************** Social Media  ******************* */
 /* *********************************************** */
-
+.stats-title {
+  text-align: center;
+  
+}
 .social-stats {
+ 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: yellow;
+  border: 1px solid lightgrey;
+}
+.social-container {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+
+}
+
+.social-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.social-image-icon {
+  /* border: 1px solid lightgrey; */
+  display: flex;
+  align-items: center;
+}
+.twitter-icon {
+  width: 40px;
+  height: 40px;
+}
+.facebook-icon {
+  width: 40px;
+  height: 40px;
+}
+.google-icon {  
+  width: 40px;
+  height: 40px;
+}
+.twitter,
+.facebook,
+.googlePlus {
+  
+ 
+  
 }
 
 
