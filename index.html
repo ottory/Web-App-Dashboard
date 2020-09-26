@@ -188,15 +188,15 @@
 
 
   <section class="members">
-    <h3>New Members</h3>
+    <h3 class="dash-title">New Members</h3>
 
       <div class="members-container">
           <img src="images/member-1.jpg" class="profile-image">
               <div class="members-text">
-                  <p>Victoria Chambers</p>
-                  <a href="#">victoria.chambers80@example.com</a>
-              </div>
-                  <p class="date">10/15/15</p>
+                  <p class="name">Victoria Chambers</p>
+                  <p class="email">victoria.chambers80@example.com</a>
+                 </div>
+                 <p class="date">10/15/15</p>
       </div>
     
 
@@ -204,8 +204,8 @@
     <div class="members-container">
             <img src="images/member-2.jpg" class="profile-image">
               <div class="members-text">
-                  <p>Dale Byrd</p>
-                  <a href="#">dale.byrd52@example.com</a>
+                  <p class="name">Dale Byrd</p>
+                  <p class="email">dale.byrd52@example.com</a>
               </div>
               <p class="date">10/15/15</p>
       </div>
@@ -215,8 +215,8 @@
     <div class="members-container">
               <img src="images/member-3.jpg" class="profile-image">
                 <div class="members-text">
-                    <p>Dawn Wood</p>
-                    <a href="#">dawn.wood16@example.com</a>
+                    <p class="name">Dawn Wood</p>
+                    <p class="email">dawn.wood16@example.com</a>
                 </div>
                 <p class="date">10/15/15</p>
       </div>
@@ -226,8 +226,8 @@
     <div class="members-container">
               <img src="images/member-4.jpg" class="profile-image">
                 <div class="members-text">
-                    <p>Dan Oliver</p>
-                    <a href="#">dan.oliver@example.com</a>
+                    <p class="name">Dan Oliver</p>
+                    <p class="email">dan.oliver@example.com</a>
                 </div>
                 <p class="date">10/15/15</p>
       </div>
@@ -241,16 +241,16 @@
     /* *********************************************** */ -->
   
 <section class="recent-activity">
-    <h3>Recent Activity</h3>
+    <h3 class="dash-title">Recent Activity</h3>
 
       
           <div class="members-container">
             <img src="images/member-1.jpg" class="profile-image">
               <div class="members-text">
-                <p>Victoria Chambers commented on YourApp's SEO tips</p>
-                <p>4 hours ago</p>
+                <p class="name">Victoria Chambers commented on YourApp's SEO tips</p>
+                <p class="date">4 hours ago</p>
               </div>
-                <p>></p>
+                <button class="arrow">></button>
               
           </div>
     
@@ -259,10 +259,10 @@
       <div class="members-container">
         <img src="images/member-2.jpg" class="profile-image">
           <div class="members-text">
-            <p>Dale Byrd likes the post Facebook's Changes for 2016</p>
-            <p>5 hours ago</p>
+            <p class="name">Dale Byrd likes the post Facebook's Changes for 2016</p>
+            <p class="date">5 hours ago</p>
           </div>
-            <p>></p>
+          <button class="arrow">></button>
           
       </div>
     
@@ -271,10 +271,10 @@
       <div class="members-container">
         <img src="images/member-3.jpg" class="profile-image">
           <div class="members-text">
-            <p>Dawn Wood commented on Facebook's Changes for 2016</p>
-            <p>5 hours ago</p>
+            <p class="name">Dawn Wood commented on Facebook's Changes for 2016</p>
+            <p class="date">5 hours ago</p>
           </div>
-            <p>></p>
+          <button class="arrow">></button>
           
       </div>
     
@@ -284,9 +284,9 @@
         <img src="images/member-4.jpg" class="profile-image">
           <div class="members-text">
             <p>Dan Oliver posted YourApp's SEO Tips</p>
-            <p>1 day ago</p>
+            <p class="date">1 day ago</p>
           </div>
-            <p>></p>
+          <button class="arrow">></button>
           
       </div>
     
@@ -298,12 +298,17 @@
     /* *********************************************** */ -->
 
 <section class="message">
-    <h3>Message User</h3>
+    <h3 class="dash-title">Message User</h3>
 
-    <form class="widget-container">
-        <input type="text" placeholder="Search for user" class="form-field" id="userField">
-            <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
-            <button class="button-primary" id="send">Send</button>
+    <form class="widget-container" autocomplete="off">
+     
+        <input type="text" placeholder="Search User" class="search-user" id="userField">
+      
+      
+            <textarea placeholder="Message User" class="message-user" id="messageField"></textarea>
+
+            <button class="send-button-primary" id="send">Send</button>
+          
     </form>
 </section>
 
@@ -312,25 +317,30 @@
     /* ************** Local Settings Widget ******************* */
     /* *********************************************** */ -->
   <section class="settings">
-    <h3>Settings</h3>
-
-    <!-- custom CSS toggle code -->
-    <fieldset>
-      <legend>View</legend>
-      <div class="switch-toggle switch-candy">
-        <input id="week" name="view" type="radio" checked>
-        <label for="week" onclick="">Week</label>
-    
-        <input id="month" name="view" type="radio">
-        <label for="month" onclick="">Month</label>
-    
-        <input id="day" name="view" type="radio">
-        <label for="day" onclick="">Day</label>
-    
-        <a></a>
-      </div>
-    </fieldset>
-    
+    <h3 class="dash-title">Settings</h3>
+        <div class="toggle">
+          <p>Send Email</p>
+                  <label class="switch">
+                    <input class="email" type="checkbox">
+                      <div class="slider">
+                          <span class="on">on</span>
+                          <span class="on">off</span>
+                      </div>
+                  </label>
+        </div>
+  
+   
+     
+    <div class="toggle">
+      <p>Set profile to public</p>
+              <label class="switch">
+                <input class="public" type="checkbox">
+                  <div class="slider">
+                      <span class="on">on</span>
+                      <span class="on">off</span>
+                  </div>
+          </label>
+    </div>
     
 
 
@@ -344,7 +354,7 @@
           <option>Pacific Standard Time</option>
       </select>
       <div class="settings-button">
-          <button class="button-primary" id="save">Save</button>
+          <button class="save-button-primary" id="save">Save</button>
           <button class="button-disabled" id="cancel">Cancel</button>
       </div>
   </section>
@@ -356,7 +366,7 @@
 </div>
 <!-- members container closing div -->
 
-      </main>
+</main>
 
 
 </div>
