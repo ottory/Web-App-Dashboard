@@ -327,16 +327,6 @@ main {
 }
 
 
-/* GRID AREAS FOR MEDIA QUERY'S */
-/* .twitter {
-  grid-area: twitter;
-}
-.facebook {
-  grid-area: facebook;
-}
-.googlePlus {
-  grid-area: googlePlus;
-} */
 
 /* *********************************************** */
 /* ************** New Members  ******************* */
@@ -614,3 +604,14 @@ border-bottom: 1px solid black;
     width: 45vw;
   }
 }
+
+/* GRID AREAS FOR MEDIA QUERY'S */
+/* .twitter {
+  grid-area: twitter;
+}
+.facebook {
+  grid-area: facebook;
+}
+.googlePlus {
+  grid-area: googlePlus;
+} */
