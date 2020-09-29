@@ -18,8 +18,9 @@
 /* *********************************************** */
 
 body {
-margin: 0 auto;
-background-color: lime;
+margin: 0;
+/* background-color: lime; */
+background-color: #e2d9d9;
 }
 
 
@@ -36,8 +37,9 @@ background-color: lime;
 .top-header {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: rgb(235, 139, 235);
+  /* align-items: center; */
+  background-color: #8788F1;
+  grid-area: header;
   
   
 }
@@ -55,7 +57,8 @@ background-color: lime;
   flex-direction: row;
   /* flex-wrap: nowrap; */
   align-items: center;
-  /* margin-top: 0; */
+  margin: auto;
+  max-width: 65%;
  
   
 }
@@ -74,15 +77,15 @@ background-color: lime;
 }
 .bell-icon {
   display: flex;
-  background-color: orange;
-  padding-left: 30px;
+  /* background-color: orange; */
+  padding-right: 20px;
   border-right: 1px solid black;
-  width: 35%;
+  /* width: 35%; */
   margin-bottom: 10px;
+  /* margin-left: auto; */
 }
 .bell {
-  width: 65%;
-  /* height: 40px; */
+  width: 40px;
   margin-top: 10px;
   display: flex;
   /* padding-right: 10px; */
@@ -98,9 +101,9 @@ background-color: lime;
   background: green;
   color: white;
   padding: 6px 9px;
-  position: absolute;
-  top: 5rem;
-  left: 3.4rem;
+  position: relative;
+  bottom: 1rem;
+  right: 2.6rem;
   
   
 }
@@ -109,8 +112,8 @@ background-color: lime;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  background-color: red;
-  margin-left: auto;
+  /* background-color: red; */
+  /* margin-left: 40px; */
   
  
   
@@ -118,19 +121,21 @@ background-color: lime;
 .profile {
   display: flex;
   
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 18px;
   /* padding-right: 5px; */
   /* padding-left:5px; */
   margin-left: 10px;
-  margin-right: 30px;
-  background-color: orange;
-}
+  /* margin-right: 30px; */
+  /* background-color: orange; */
+} 
 
 
 nav {
   display: flex;
   align-items: center;
-  background-color: red;
+  background-color: #5D5FD6;
+  grid-area: nav;
 }
 nav a {
   display: flex;
@@ -138,15 +143,18 @@ nav a {
   margin: 20px 20px;
 }
 
-h3 {
+/* h3 {
   font-weight: lighter;
-}
+  
+
+} */
 /* main area  ************************/
 main {
-  margin-top: 0px;
+  grid-area: main;
+  margin: 10px;
  
   display: grid;
-  background-color: green;
+  /* background-color: green; */
   grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-template-areas: 
@@ -158,6 +166,7 @@ main {
 }
 
 .main-header {
+  grid-area: main-header;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -165,13 +174,15 @@ main {
 .headline {
   font-size: 15px;
   padding-left: 10px;
+  font-weight: 400;
+  
 }
 
 .main-header-search {
   display:flex;
   width: 70%;
   border-radius: 10px;
-  background-color: pink;
+  background-color: #b7b7ca;
   padding: 10px 5px 10px 60px;
 }
 
@@ -182,52 +193,51 @@ main {
 
 
 .alert {
+  grid-area: alert;
   width: 90%;
   height: 40px;
-  background-color: red;
+  background-color: #5D5FD6;
   border-radius: 10px;
   margin-left: 30px;
   margin-top: 10px;
   
   
+  
 }
 
-p {
+.alert-text {
   display: flex;
-  margin: 0px;
+  margin: auto;
+
   padding-left: 12px;
-}
-.traffic {
-border-bottom: 10px solid #222020;
-}
-.traffic-header {
-  display: flex;
-  align-items: center;
-  background-color: blue;
-  
-}
-.traffic-nav {
-  display: flex;
-  
-   
-  
- 
+  color: white;
+  font-size: 15px;
 }
 
-.traffic-nav li  {
-  background-color: red;
-  padding: 5px;
+
+
+.traffic {
+  grid-area: traffic;
   display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+.traffic-nav  {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around ;
+  padding-left: 0px;
+  color: #5D5FD6;
   
- 
 }
 
 .daily {
   /* display: flex; */
- 
+  grid-area: daily;
   background-color: orange;
   font-size: 15px;
-  border-bottom: 10px solid #222020;
+  border-bottom: 1px solid black;
 }
 .widget-container-half {
   display:flex;
@@ -239,7 +249,7 @@ border-bottom: 10px solid #222020;
 
 .mobile-users {
   background-color: red;
-  border-bottom: 10px solid #222020;
+  
 }
 
 /* *********************************************** */
@@ -247,6 +257,8 @@ border-bottom: 10px solid #222020;
 /* *********************************************** */
 .stats-title {
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
   
 }
 .social-stats {
@@ -255,13 +267,14 @@ border-bottom: 10px solid #222020;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  background-color: purple;
+  /* background-color: purple; */
   border: 2px solid lightgrey;
   padding: 15px;
-  border-bottom: 10px solid #222020;
+  border-bottom: 1px solid black;
 }
 .social-container {
-  border: 1px solid yellow;
+  border: 1px solid #5D5FD6;
+  border-radius: 5px;
   display: flex;
   align-items: center; 
   justify-content: center; 
@@ -273,18 +286,19 @@ border-bottom: 10px solid #222020;
 
 .social-text p:nth-child(odd) {
  font-weight: bold;
- 
+ color: #5D5FD6;
 }
 .social-text p:nth-child(even) {
   font-weight: 100;
   font-size: 20px;
+  color: #5D5FD6;
   
   
 }
 
 .social-image-icon {
   border: 1px solid lightgrey; 
-  background-color: royalblue;
+  background-color: #5D5FD6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,19 +343,21 @@ border-bottom: 10px solid #222020;
 /* *********************************************** */
 
 .members {
+  grid-area: members;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   
-  background-color: coral;
+  /* background-color: coral; */
   /* border-top: 2px solid black; */
-  border-bottom: 10px solid #222020;
+  border-bottom: 1px solid black;
 }
 .dash-title {
  
   margin-bottom: 0;
   text-align: center;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
 
 
@@ -368,7 +384,7 @@ border-bottom: 10px solid #222020;
 }
 .members-container .email {
   margin: 0;
-  color: #4e29f0;
+  color: #5D5FD6;
 }
 .members-container .arrow {
   display: none;
@@ -394,12 +410,13 @@ border-bottom: 10px solid #222020;
 /* ************** Recent Activity ******************* */
 /* *********************************************** */
 .recent-activity {
-  /* margin: 0; */
+  grid-area: recent-activity;
+  margin: 10px;
   display: flex;
   flex-direction: column;
-  background-color: darkgoldenrod;
+  /* background-color: darkgoldenrod; */
   /* border-top: 2px solid black; */
-  border-bottom: 10px solid #222020;
+  border-bottom: 1px solid black;
 }
 
 /* *********************************************** */
@@ -407,10 +424,11 @@ border-bottom: 10px solid #222020;
 /* *********************************************** */
 
 .message {
-
+grid-area: message;
+margin: 10px;
 display: flex;
 flex-direction: column;
-border-bottom: 10px solid #222020;
+border-bottom: 1px solid black;
 
 }
 .widget-container {
@@ -429,6 +447,8 @@ border-bottom: 10px solid #222020;
   font-weight: 400;
   border-radius: 5px;
   margin:15px 10px 0;
+  border: 1px solid #5D5FD6;
+  border-radius: 5px;
 
 }
 .message-user {
@@ -439,6 +459,8 @@ border-bottom: 10px solid #222020;
   font-weight: 400;
   border-radius: 5px;
   margin:15px 10px 0;
+  border: 1px solid #5D5FD6;
+  border-radius: 5px;
   
 }
 
@@ -446,12 +468,15 @@ border-bottom: 10px solid #222020;
   border-radius: 5px;
   height: 25px;
   margin:15px 10px 10px;
+  background-color: #5D5FD6;
 
 }
 /* *********************************************** */
 /* ************** Settings Widget ******************* */
 /* *********************************************** */
 .settings {
+  grid-area: settings;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   padding-top: 0;
@@ -474,12 +499,14 @@ border-bottom: 10px solid #222020;
 }
 /* time zone */
 #timezone {
-  width: 100%;
-  height: 40px;
+  margin: auto;
+  width: 70%;
+  height: 20%;
   padding: 6px;
+  
+  border: 1px solid #5D5FD6;
   border-radius: 5px;
-  border: 1px solid rgb(110, 106, 106);
-  background-color: greenyellow;
+  background-color: rgb(243, 243, 243);
 }
 
 .form-field {
@@ -496,49 +523,94 @@ border-bottom: 10px solid #222020;
 }
 .save-button-primary {
   text-transform: uppercase;
-  background-color: #4e29f0;
+  background-color: #5D5FD6;
   width: 45%;
   padding: 10px;
   border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 10px;
+  border: 1px solid #5D5FD6;
+  border-radius: 5px;
   
 }
 .button-disabled {
-  text-transform: uppercase;
-  background-color: #4e29f0;
+ 
   width: 45%;
   border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 10px;
-  
-  
-
-
+  text-transform: uppercase;
+  background-color: #5D5FD6;
+  border: 1px solid #5D5FD6;
+  border-radius: 5px;
 }
 
+/************************************************ */
+/* ************** Grid Areas ******************* */
 /* *********************************************** */
+
+
+/************************************************ */
 /* ************** Media Querys ******************* */
 /* *********************************************** */
-/* 
+
 @media (min-width: 768px) {
   .grid-container {
     grid-template-columns: 55px 1fr;
     grid-template-areas: 
       "header header"
-      "nav main";
-    
+      "nav main"
+      ;
   }
 }
 
-main {
+/* main {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto-fill, auto);
+  grid-template-areas:
+  "header header"
+  "alert alert"
+  "traffic traffic"
+  "daily daily"
+  "mobile-users mobile-users"
+  "social-stats social-status"
+  "members members"
+  "recent-activity recent-activity"
+  "messages settings"
+  
+  
+  ;
 }
+.nav {
+  
+  flex-direction: column;
+} */
+
+
 
 @media (min-width: 768px) {
   .main {
     grid-template-columns: 1fr;
   }
-} */
+  .traffic, .social {
+    grid-column: 1 / span 2;
+  }
+  .daily, .members, .message {
+    grid-column: 1 / span 1;
+  }
+  .mobile, .recent-activity, .settings {
+    grid-column: 2 / span 1;
+  }
+  .widget-container-full, .widget-container-half {
+    width: 95vw;
+  }
+  .widget-container-full {
+    width: 90vw;
+  }
+  .widget-container-half {
+    width: 45vw;
+  }
+}
