@@ -180,31 +180,31 @@ nav a {
   
 }
 
-
+/* *** Alert Banner */
 .alert {
   grid-area: alert;
-  width: 90%;
-  height: 40px;
+}
+ .alert-banner { 
+  display: flex;
+  align-items: center;
   background-color: #5D5FD6;
+  color: #fff;
   border-radius: 10px;
   margin-left: 30px;
-  margin-top: 10px;
-  
-  
-  
+  margin-top: 10px; 
+  padding-left: 10px;
+ }
+
+.alert-banner-close {
+ padding-right: 10px; 
+margin-left: auto;
+font-size: 20px;
+} 
+.alert-banner-close:hover {
+  cursor: pointer;
 }
 
-.alert-text {
-  display: flex;
-  margin: auto;
-
-  padding-left: 12px;
-  color: white;
-  font-size: 15px;
-}
-
-
-
+/*  Traffic Charts */
 .traffic {
   grid-area: traffic;
   display: flex;
@@ -228,15 +228,15 @@ nav a {
   font-size: 15px;
   border-bottom: 1px solid black;
   border: 2px solid red;
-}
-.widget-container-half {
-  width: 90vh;
-  margin: 0 auto;
-}
-.widget-container-full {
-  width: 90vh;
-  margin: 0 auto;
-}
+ }
+ .widget-container-half {
+  width: 40vh;
+  /* margin: 0 auto; */
+}  
+ .widget-container-full {
+  width: 40vh;
+  /* margin: 0 auto; */
+} 
 
 /* #daily-chart {
   display:flex;

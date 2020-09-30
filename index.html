@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/styles.css" rel="stylesheet">
     <link rel="toggle" href="css/toggle-switch.css">
@@ -59,7 +59,7 @@
                 <!-- alert banner  -->
  
            <div class="alert" id="alert">
-              <p class="alert-text">ALERT! You have 6 overdue tasks to complete</p>
+              
               <!-- insert javascript here -->
           </div>  
 
@@ -77,13 +77,18 @@
                         <li class="traffic-nav-link">Monthly</li>
                       </ul>
             </div>
-            <div class="widget-container-full">
+            <!-- <div class="widget-container-full"> -->
               <!-- element line graph will attach to -->
-                  <p>traffic graph zig zag</p>
-                  <canvas id="k traffic-chart" width="1600" height="900"></canvas>></canvas>
-            </div>
+              <canvas id="traffic-chart"></canvas>
+              
+            
+            <!-- </div> -->
 
       </section>
+
+     
+
+
 
 <!-- Bar graph  -->
 
@@ -93,7 +98,7 @@
               </div>
                 <div class="widget-container-half">
                   <!-- element line graph will attach to -->
-              
+                  
                   <canvas id="daily-chart"></canvas>
                 </div>
         </section>
@@ -183,7 +188,7 @@
     
   
     </div> 
-
+    
  <!-- /* *********************************************** */
     /* ************** New Members  ******************* */
     /* *********************************************** */ -->
@@ -376,6 +381,7 @@
  <!-- grid container closing div -->
 </div> 
   <!-- grid container closing div -->
-    <script type="text/javascript" src="js/app.js"></script>
+  
+  <script src="js/script.js"></script>  
 </body>
 </html>
