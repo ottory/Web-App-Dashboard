@@ -104,7 +104,7 @@ let mobileData = {
   labels: ['Desktop', 'Tablet', 'Phones'],
   datasets: [{
     label: '# of Users',
-    data: [3000, 60, 575],
+    data: [3000, 160, 775],
     borderWidth: 0,
     backgroundColor: [
       '#7477bf',

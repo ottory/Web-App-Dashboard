@@ -6,8 +6,8 @@
     <title>Dashboard</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="toggle" href="css/toggle-switch.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
     </head>
   <body>
     
@@ -34,22 +34,20 @@
     /* ************** Side Nav Bar ******************* */
     /* *********************************************** */ -->
                 
-      
-        <nav>
+      <nav>
            <a href="#"><img src="icons/icon-dashboard.svg" alt="Dashboard"></a>
            <a href="#"><img src="icons/icon-members.svg" alt="members"></a>
            <a href="#"><img src="icons/icon-visits.svg" alt="visits"></a>
            <a href="#"><img src="icons/icon-settings.svg" alt="settings"></a>
         </nav>
     
- 
-<!-- /* *********************************************** */
+  <!-- /* *********************************************** */
     /* ************** Main Content Begin ******************* */
     /* *********************************************** */ -->
   
 
 <main>
-          <div class="main-header"​>
+          <div class="main-header">
               <h3 class="headline">Dashboard</h3>
                   <div class="main-header-search">
                       <input type="search" placeholder="Search..">
@@ -59,7 +57,6 @@
                 <!-- alert banner  -->
  
            <div class="alert" id="alert">
-              
               <!-- insert javascript here -->
           </div>  
 
@@ -77,6 +74,7 @@
                         <li class="traffic-nav-link">Monthly</li>
                       </ul>
             </div>
+
             <div class="widget-container-full">
               <!-- element line graph will attach to -->
               <canvas id="traffic-chart"></canvas>
@@ -89,8 +87,7 @@
 <!-- Bar graph  -->
 
         <section class="daily">
-              
-                <h3 class="stats-title">Daily Traffic</h3>
+            <h3 class="stats-title">Daily Traffic</h3>
               
                 <div class="widget-container-half">
                   <!-- element line graph will attach to -->
@@ -102,8 +99,7 @@
 <!-- Donut chart  -->
 
         <section class="mobile-users">
-              
-                <h3 class="stats-title">Mobile Users</h3>
+            <h3 class="stats-title">Mobile Users</h3>
               
                 <div class="widget-container-half">
                   <!-- element line graph will attach to  -->
@@ -115,12 +111,13 @@
 
 <div class="social-stats">
   <h3 class="stats-title">Social Stats</h3>
-
+  
 
 
 <!-- Twitter -->
     <div class="social-container twitter">
         <div class="social-image-icon">
+          <?xml version="1.0" encoding="utf-8"?>
               <svg class="twitter-icon version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
               <path fill="red" d="M32,3.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.8,0.8,24,0,22.2,0
@@ -179,9 +176,9 @@
                       <p>2,250</p>
                     </div>
           
-          
-    
-    
+                 
+                  </div>    
+                  
   
     </div> 
     
@@ -189,113 +186,94 @@
     /* ************** New Members  ******************* */
     /* *********************************************** */ -->
   
-
-
   <section class="members">
     <h3 class="dash-title">New Members</h3>
 
-      <div class="members-container">
-          <img src="images/member-1.jpg" class="profile-image">
+      <div class="members-container ">
+          <img src="images/member-1.jpg" alt="member-1" class="profile-image">
                 <div class="members-text">
                     <p class="name">Victoria Chambers</p>
-                    <p class="email">victoria.chambers80@example.com</a>
+                    <p class="email">victoria.chambers@example.com</p>
                 </div>
-                 <p class="date">10/15/15</p>
+                 <p>10/15/15</p>
       </div>
     
-
-  
-    <div class="members-container">
-            <img src="images/member-2.jpg" class="profile-image">
+      <div class="members-container">
+          <img src="images/member-2.jpg" alt="member-2" class="profile-image">
               <div class="members-text">
                   <p class="name">Dale Byrd</p>
-                  <p class="email">dale.byrd52@example.com</a>
+                  <p class="email">dale.byrd52@example.com</p>
               </div>
-              <p class="date">10/15/15</p>
-      </div>
-  
+              <p>10/15/15</p>
+    </div>
 
-  
-    <div class="members-container">
-              <img src="images/member-3.jpg" class="profile-image">
+    <div class="members-container ">
+          <img src="images/member-3.jpg" alt="member-3" class="profile-image">
                 <div class="members-text">
                     <p class="name">Dawn Wood</p>
-                    <p class="email">dawn.wood16@example.com</a>
+                    <p class="email">dawn.wood16@example.com</p>
                 </div>
-                <p class="date">10/15/15</p>
-      </div>
+                <p>10/15/15</p>
+    </div>
   
-
-  
-    <div class="members-container">
-              <img src="images/member-4.jpg" class="profile-image">
+      <div class="members-container ">
+          <img src="images/member-4.jpg" alt="member-3" class="profile-image">
                 <div class="members-text">
                     <p class="name">Dan Oliver</p>
-                    <p class="email">dan.oliver@example.com</a>
+                    <p class="email">dan.oliver@example.com</p>
                 </div>
-                <p class="date">10/15/15</p>
-      </div>
+                <p>10/15/15</p>
+    </div>
 
 </section>
-
-
 
 <!-- /* *********************************************** */
     /* ************** Recent Activity ******************* */
     /* *********************************************** */ -->
   
-<section class="recent-activity">
+ <section class="recent-activity">
     <h3 class="dash-title">Recent Activity</h3>
 
-      
-          <div class="members-container">
-            <img src="images/member-1.jpg" class="profile-image">
+      <div class="members-container ">
+          <img src="images/member-1.jpg" alt="member-1" class="profile-image">
               <div class="members-text">
                 <p class="name">Victoria Chambers commented on YourApp's SEO tips</p>
-                <p class="date">4 hours ago</p>
+                <p class="email">4 hours ago</p>
               </div>
-                <button class="arrow">></button>
               
-          </div>
-    
-
-   
-      <div class="members-container">
-        <img src="images/member-2.jpg" class="profile-image">
-            <div class="members-text">
-              <p class="name">Dale Byrd likes the post Facebook's Changes for 2016</p>
-              <p class="date">5 hours ago</p>
-            </div>
-          <button class="arrow">></button>
-          
+              <p class="arrow">></p>
+              
       </div>
-    
 
-  
-      <div class="members-container">
-        <img src="images/member-3.jpg" class="profile-image">
+    <div class="members-container ">
+        <img src="images/member-2.jpg" alt="member-2" class="profile-image">
+            <div class="members-text">
+              <p class="name">Dale Byrd likes the post Facebook's on Changes for 2016 </p>
+              <p class="email">5 hours ago</p>
+            </div>
+            <p class="arrow">></p>
+    </div>
+
+    <div class="members-container ">
+        <img src="images/member-3.jpg" alt="member-3" class="profile-image">
             <div class="members-text">
               <p class="name">Dawn Wood commented on Facebook's Changes for 2016</p>
-              <p class="date">5 hours ago</p>
+              <p class="email">5 hours ago</p>
             </div>
-          <button class="arrow">></button>
-          
-      </div>
-    
+            <p class="arrow">></p>
+    </div>
 
-    
-      <div class="members-container">
-        <img src="images/member-4.jpg" class="profile-image">
+    <div class="members-container ">
+        <img src="images/member-4.jpg" alt="member-4" class="profile-image">
             <div class="members-text">
-              <p>Dan Oliver posted YourApp's SEO Tips</p>
-              <p class="date">1 day ago</p>
+              <p class="name">Dan Oliver posted YourApp's SEO Tips</p>
+              <p class="email">1 day ago</p>
             </div>
-          <button class="arrow">></button>
-          
+            <p class="arrow">></p>
       </div>
     
 
-</section>
+</section> 
 
       
 
@@ -307,14 +285,9 @@
     <h3 class="dash-title">Message User</h3>
 
     <form class="widget-container" autocomplete="off">
-     
-        <input type="text" placeholder="Search User" class="search-user" id="userField">
-      
-      
-            <textarea placeholder="Message User" class="message-user" id="messageField"></textarea>
-
+      <input type="text" placeholder="Search User" class="search-user" id="userField">
+        <textarea placeholder="Message User" class="message-user" id="messageField"></textarea>
             <button class="send-button-primary" id="send">Send</button>
-          
     </form>
 </section>
 
@@ -322,35 +295,32 @@
 <!-- /* *********************************************** */
     /* ************** Local Settings Widget ******************* */
     /* *********************************************** */ -->
+
   <section class="settings">
     <h3 class="dash-title">Settings</h3>
         <div class="toggle">
           <p>Send Email</p>
                   <label class="switch">
                     <input class="email" type="checkbox">
-                      <div class="slider round">
-                          <span class="on"></span>
-                          <span class="on"></span>
-                      </div>
+                      <span class="slider round">
+                          
+                          <span class="on">on</span>
+                      </span>
                   </label>
         </div>
   
-   
-     
-    <div class="toggle">
+   <div class="toggle">
       <p>Set profile to public</p>
               <label class="switch">
                 <input class="public" type="checkbox">
-                  <div class="slider round">
-                      <span class="on"></span>
-                      <span class="on"></span>
-                  </div>
+                  <span class="slider round">
+                      
+                      <span class="on">on</span>
+                  </span>
           </label>
     </div>
     
-
-
-    <!-- custom CSS toggle code -->
+<!-- custom CSS toggle code -->
 
       <select class="form-field" id="timezone">
           <option disabled selected>Select a timezone</option>
@@ -365,16 +335,10 @@
       </div>
   </section>
 
-
-
-     
-
-
-
-</main>
+</main> 
  <!-- grid container closing div -->
 </div> 
-  <!-- grid container closing div -->
+  
   
   <script src="js/script.js"></script>  
 </body>
