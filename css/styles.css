@@ -140,9 +140,15 @@ nav a {
   margin: 20px 20px;
 }
 
+.svgIcon {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
 
 /* main area  ************************/
    main { 
+     
   grid-area: main;
   display: grid;
   background-color: #eee5e5;
@@ -177,10 +183,11 @@ nav a {
 
 .main-header-search {
   display:flex;
-  width: 70%;
+  width: 60%;
   border-radius: 10px;
   background-color: #e9e9f3;
-  padding: 10px 5px 10px 60px;
+  padding: 10px 15px 10px 2px;
+  margin-right: 20px ;
   border: 1px solid rgb(194, 180, 180);
 }
 
@@ -191,6 +198,8 @@ nav a {
 /* *** Alert Banner */
 .alert {
   grid-area: alert;
+  margin-right: 20px;
+
 }
 
  .alert-banner { 
@@ -318,8 +327,8 @@ font-size: 20px;
 }
 
 .twitter-icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   padding-top: 10px;
 }
 
