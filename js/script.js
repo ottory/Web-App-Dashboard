@@ -136,16 +136,16 @@ let mobileChart = new Chart(mobileCanvas, {
 
 ////// Message fields
 
-send.addEventListener('click', () =>  {
+
+send.addEventListener('click', (event) =>  {
+  event.preventDefault();
   //ensure user and message fields are filled out 
     if (user.value === "" && message.value === "") {
       alert ("Please fill out user and message fields before sending");
-      event.preventDefault();
     } else if (user.value === "" ) {
          alert ("Please fill out user field before sending");
       } else if (message.value === "") {
         alert ("Please fill out user field before sending");
-        event.preventDefault();
       } else {
         alert (`Message successfully sent to: ${user.value}`)
       }
